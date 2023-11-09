@@ -1,9 +1,18 @@
 .select {
   position: relative;
 
+  &.open &__list {
+    display: block;
+  }
+
+  &.open &__checked {
+    border: 2px solid $dark-blue;
+  }
+
   &__dropdown {
     position: relative;
     width: 120px;
+    cursor: pointer;
 
     &.down::after {
       background: url("../../public/images/down.svg") 50% 50% no-repeat;
@@ -21,7 +30,6 @@
       top: 50%;
       right: 15px;
       transform: translateY(-50%);
-      cursor: pointer;
     }
   }
 
@@ -31,7 +39,6 @@
     border: 2px solid $light-gray;
     border-radius: 10px;
     padding: 17px 15px;
-
   }
 
   &__list {
@@ -45,9 +52,9 @@
     z-index: 1;
     display: none;
 
-    &.open {
-      display: block;
-    }
+    // &.open {
+    //   display: block;
+    // }
   }
 
   &__item {
@@ -71,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .select {
     &__dropdown {
       width: 100%;

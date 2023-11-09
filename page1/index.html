@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Socratica</title>
   </head>
   <body>
     <div id="app" class="app">
@@ -25,12 +25,13 @@
             </h1>
             <div class="form__topicAndClass">
               <div class="form__topic input">
-                <label for="topic" class="input__label label">Тема урока</label>
                 <input
                   id="topic"
                   type="text"
                   class="input__text"
                   placeholder="Напиши что-то конкретное" />
+                  <label for="topic" class="input__label label">Тема урока</label>
+                  <span class="input__remove"></span>
               </div>
               <div class="form__class select">
                 <div class="select__dropdown down">
@@ -42,7 +43,7 @@
                     disabled
                     value="4" />
                 </div>
-                <ul class="select__list open">
+                <ul class="select__list">
                   <li class="select__item">1</li>
                   <li class="select__item">2</li>
                   <li class="select__item">3</li>
@@ -53,6 +54,8 @@
             </div>
             <div class="form__subjects subjects">
               <ul class="subjects__list">
+                <li class="subjects__item">Генетика</li>
+                <li class="subjects__item">Генетика</li>
                 <li class="subjects__item">Генетика</li>
                 <li class="subjects__item">Анатомия человека</li>
                 <li class="subjects__item">Вулканы</li>
@@ -65,15 +68,15 @@
               Показать больше вариантов
             </div>
             <div class="form__goal goal">
-              <label for="goal" class="goal__label label error"
+              <label for="goal" class="goal__label label"
                 >Цель урока</label
               >
               <textarea
                 id="goal"
-                class="goal__text error"
+                class="goal__text"
                 placeholder="Напиши свою учебную цель"></textarea>
               <div class="goal__message">
-                <span class="goal__error show">Введите цель урока</span>
+                <span class="goal__error">Введите цель урока</span>
                 <span class="goal__count">0 / 200</span>
               </div>
             </div>

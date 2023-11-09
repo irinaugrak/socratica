@@ -1,5 +1,40 @@
 .input {
   position: relative;
+
+  .input__remove.show {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    border: 1px solid $black;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 18px;
+      background: url("../../public/images/stroke-left.svg") 50% 50% no-repeat;
+    }
+  
+    &::before {
+      content: "";
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 18px;
+      background: url("../../public/images/stroke-right.svg") 50% 50% no-repeat;
+    }
+  }
   
   &__text {
     width: 100%;
@@ -13,30 +48,13 @@
       font-weight: 400;
       color: $gray;
     }
-  }
 
-  &::after {
-    content: "";
-    position:absolute;
-    top: 50%;
-    right: 15px;
-    width: 16px;
-    height: 16px;
-    transform: translateY(-50%);
-    background: url("../../public/images/stroke-left.svg") 50% 50% no-repeat;
-    border: 1px solid $black;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  &::before {
-    content: "";
-    position:absolute;
-    top: 50%;
-    right: 15px;
-    width: 16px;
-    height: 16px;
-    transform: translateY(-50%);
-    background: url("../../public/images/stroke-right.svg") 50% 50% no-repeat;
+    &:focus {
+      border: 2px solid $dark-blue;
+      
+      & + label {
+        color: $dark-blue;
+      }
+    }
   }
 }
