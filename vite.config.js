@@ -2,6 +2,7 @@ import Inspect from 'vite-plugin-inspect';
 import { resolve } from "path";
 import { defineConfig } from 'vite';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   base: "/socratica/",
   plugins: [Inspect()],
