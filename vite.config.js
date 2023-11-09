@@ -1,7 +1,8 @@
 import Inspect from 'vite-plugin-inspect';
 import { resolve } from "path";
+import { defineConfig } from 'vite';
 
-export default {
+export default defineConfig({
   base: "/socratica",
   plugins: [Inspect()],
   build: {
@@ -18,4 +19,4 @@ export default {
 
     }
   }
-}
+})
