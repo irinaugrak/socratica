@@ -1,0 +1,43 @@
+.header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main {
+  display: grid;
+  grid-template-areas:
+    "teacher form";
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+.teacher {
+  grid-area: teacher;
+}
+
+.form {
+  grid-area: form;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .main {
+    grid-template-areas:
+    "teacher"
+    "form";
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+.form {
+  max-width: 800px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__topicAndClass {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 20px;
+  }
+
+  &__topic {
+    margin-right: 16px;
+  }
+
+  &__subjects {
+    margin-bottom: 20px;
+  }
+
+  &__actions {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    &__topicAndClass {
+      grid-template-columns: 1fr;
+    }
+
+    &__topic {
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+
+  }
+}

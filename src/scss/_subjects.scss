@@ -1,0 +1,17 @@
+.subjects {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__item {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 16px;
+    background-color: $bg-light-gray;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

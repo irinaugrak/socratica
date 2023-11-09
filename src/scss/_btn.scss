@@ -1,0 +1,23 @@
+.btn {
+  padding: 18px 52px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+
+  &.prev {
+    color: $dark-blue;
+    border: 1px solid $dark-blue;
+  }
+
+  &.next {
+    color: $white;
+    background-color: $dark-blue;
+    border: 1px solid $dark-blue;
+  }
+
+  &.disabled {
+    color: $gray;
+    background-color: $bg-light-gray;
+    border: 1px solid $bg-light-gray;
+  }
+}

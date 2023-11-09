@@ -1,0 +1,42 @@
+.input {
+  position: relative;
+  
+  &__text {
+    width: 100%;
+    border: 2px solid $light-gray;
+    border-radius: 10px;
+    padding: 17px 15px;
+
+    &::placeholder {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: $gray;
+    }
+  }
+
+  &::after {
+    content: "";
+    position:absolute;
+    top: 50%;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    background: url("../../public/images/stroke-left.svg") 50% 50% no-repeat;
+    border: 1px solid $black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    background: url("../../public/images/stroke-right.svg") 50% 50% no-repeat;
+  }
+}

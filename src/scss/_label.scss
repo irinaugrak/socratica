@@ -1,0 +1,17 @@
+.label {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: $bg;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+
+  &.error {
+    color: $red;
+  }
+}
+
+

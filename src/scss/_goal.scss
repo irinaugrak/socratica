@@ -1,0 +1,52 @@
+.goal {
+  position: relative;
+  margin-bottom: 32px;
+
+  &__text {
+    width: 100%;
+    border: 2px solid $light-gray;
+    border-radius: 10px;
+    resize: none;
+    height: 100px;
+    padding: 17px 15px;
+
+    &::placeholder {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: $gray;
+      
+    }
+
+    &.error {
+      border: 2px solid $red;
+    }
+  }
+
+  &__message {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__error {
+    font-size: 14px;
+    font-weight: 400;
+    color: $red;
+    margin-left: 15px;
+    display: none;
+
+    &.show {
+      display: inline-block;
+    }
+  }
+
+  &__count {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  
+}
+

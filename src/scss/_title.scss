@@ -1,0 +1,17 @@
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+}
