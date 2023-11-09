@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socratica</title>
+    <script type="module" crossorigin src="/socratica/assets/main-dad1c7cc.js"></script>
+    <link rel="stylesheet" href="/socratica/assets/main-d469a2ef.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <header class="header">
+        <a href="/" class="logo">
+          <img src="../images/logo.svg" class="logo__img" alt="logo" />
+          <span class="logo__title">Сократика</span>
+        </a>
+      </header>
+      <main class="main">
+        <section class="teacher">
+          <img src="../images/teacher.svg" alt="teacher" />
+        </section>
+        <section class="form">
+          <form action="">
+            <h1 class="form__title title">
+              <span class="title__num">01</span>
+              <span class="title__text">Заполни форму</span>
+            </h1>
+            <div class="form__topicAndClass">
+              <div class="form__topic input">
+                <input
+                  id="topic"
+                  type="text"
+                  class="input__text"
+                  value="Промышленная революция"
+                  autofocus
+                  placeholder="Напиши что-то конкретное" />
+                  <label for="topic" class="input__label label">Тема урока</label>
+                  <span class="input__remove show"></span>
+              </div>
+              <div class="form__class select">
+                <div class="select__dropdown down">
+                  <label for="class" class="select__label label">Класс</label>
+                  <input
+                    id="class"
+                    type="text"
+                    class="select__checked"
+                    disabled
+                    value="4" />
+                </div>
+                <ul class="select__list">
+                  <li class="select__item">1</li>
+                  <li class="select__item">2</li>
+                  <li class="select__item">3</li>
+                  <li class="select__item checked">4</li>
+                  <li class="select__item">5</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__subjects subjects">
+              <ul class="subjects__list">
+                <li class="subjects__item">Генетика</li>
+                <li class="subjects__item">Анатомия человека</li>
+                <li class="subjects__item">Вулканы</li>
+                <li class="subjects__item">Зимние виды спорта</li>
+                <li class="subjects__item">Радуга</li>
+                <li class="subjects__item">Индийская культура</li>
+              </ul>
+            </div>
+            <div class="form__more-options more-options">
+              Показать больше вариантов
+            </div>
+            <div class="form__goal goal">
+              <label for="goal" class="goal__label label"
+                >Цель урока</label
+              >
+              <textarea
+                id="goal"
+                class="goal__text"
+                placeholder="Напиши свою учебную цель"></textarea>
+              <div class="goal__message">
+                <span class="goal__error">Введите цель урока</span>
+                <span class="goal__count">0 / 200</span>
+              </div>
+            </div>
+            <div class="form__actions actions">
+              <button class="btn prev actions__prev">Назад</button>
+              <button class="btn next actions__next disabled">
+                Следующий шаг
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    
+  </body>
+</html>
