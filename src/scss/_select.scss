@@ -15,11 +15,11 @@
     cursor: pointer;
 
     &.down::after {
-      background: url("../../public/images/down.svg") 50% 50% no-repeat;
+      background: url("../../images/down.svg") 50% 50% no-repeat;
     }
 
     &.up::after {
-      background: url("../../public/images/up.svg") 50% 50% no-repeat;
+      background: url("../../images/up.svg") 50% 50% no-repeat;
     }
 
     &::after {
@@ -67,7 +67,7 @@
       &::after {
         content: "";
         position: absolute;
-        background: url("../../public/images/checked.svg") 50% 50% no-repeat;
+        background: url("../../images/checked.svg") 50% 50% no-repeat;
         top: 50%;
         right: 16px;
         width: 14px;
